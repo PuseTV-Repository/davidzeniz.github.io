@@ -203,7 +203,7 @@
 									<div class="col-md-6">
 										<div class="form-group">
 											<label for="capitalInput" style="color: black;">Capital:</label>
-											<input type="number" class="form-control" id="capitalInput" placeholder="Ingrese el capital">
+											<input type="number" class="form-control" id="capitalInput"  placeholder="Ingrese el capital">
 										</div>
 									</div>
 									<div class="col-md-6">
@@ -216,16 +216,20 @@
 								<div>
 									<button type="button" class="btn btn-primary" onclick="calculateInterest()" style="background-color:#EA5B0C; color: white;">Calcular</button>
 								</div>
-								<br>
 								<div class="mt-3">
-									<label style="color: black;">Deuda Total:</label>
-									<div id="resultadoDeudaTotal"></div>
+									<div style="display: flex; align-items: center;">
+										<label style="color: black; margin-right: 10px; margin-bottom: 0;">Deuda Total:</label>
+										<div id="resultadoDeudaTotal"></div>
+									</div>
 								</div>
+								
+								
+								
 								
 								<div class="form-group mt-3">
 									<label for="descuentoInput" style="color: black;">DSTO INTERESES (%):</label>
 									<select class="form-control" id="descuentoInput" onchange="aplicarDescuento()">
-										<option value="0.00">5%</option>
+										<option value="0.00">0%</option>
 										<option value="0.05">5%</option>
 										<option value="0.1">10%</option>
 										<option value="0.15">15%</option>
@@ -246,7 +250,6 @@
 										<option value="0.90">90%</option>
 										<option value="0.95">95%</option>
 										<option value="1">100%</option>
-										<!-- Otras opciones de descuento -->
 									</select>
 								</div>
 								<div class="mt-3">
