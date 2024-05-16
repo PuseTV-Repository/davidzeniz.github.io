@@ -328,6 +328,48 @@
 									</div>
 								</div>
 
+								<div class="mt-3" style="display: flex; align-items: center;">
+									<label for="descuentoInput2" style="color: black; margin-right: 10px; margin-bottom: -11px;">% DSTO CAPITAL:</label>
+									<select class="form-control" id="descuentoInput2" onchange="calculateInterest2()">
+										<option value="0.00">0%</option>
+										<option value="0.05">5%</option>
+										<option value="0.1">10%</option>
+										<option value="0.15">15%</option>
+										<option value="0.20">20%</option>
+									</select>
+								</div>
+
+								<div class="mt-3">
+									<div style="display: flex; align-items: center;">
+										<label style="color: black; margin-right: 10px; margin-bottom: 0;">VALOR SIN DSTO CAPITAL: S/</label>
+										<div id="valorSinDescuentoCapital"></div>
+									</div>
+								</div>
+
+								<div class="mt-3">
+									<div style="display: flex; align-items: center;">
+										<label style="color: black; margin-right: 10px; margin-bottom: 0;">DESCUENTO CAPITAL: S/</label>
+										<div id="descuentocapital"></div>
+									</div>
+								</div>
+
+								<div class="mt-3">
+									<div style="display: flex; align-items: center;">
+										<label style="color: black; margin-right: 10px; margin-bottom: 0;">CAPITAL CON DSTO: S/</label>
+										<div id="capitalcondescuento"></div>
+									</div>
+								</div>
+
+								<div class="mt-3">
+									<div style="display: flex; align-items: center;">
+										<label style="color: black; margin-right: 10px; margin-bottom: 0;">INTERES CON/SIN DSTO: S/</label>
+										<div id="interesconsindescuento"></div>
+									</div>
+								</div>
+
+
+								
+
 							</form>
 						</div>
 					</div>

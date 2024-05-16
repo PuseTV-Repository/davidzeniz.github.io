@@ -70,3 +70,40 @@ function calculateInterest() {
     document.getElementById("resultadoDeudaTotal2").innerText = totalDebt.toFixed(2); 
 
 }
+
+
+function calculateInterest2() {
+   
+    var capitalInput = document.getElementById("capitalInput").value.trim();
+    var incomeInput = document.getElementById("incomeInput").value.trim();
+
+     // Convertir los valores a números flotantes
+     var capital = parseFloat(capitalInput);
+     var income = parseFloat(incomeInput);
+ 
+
+
+    // Calcular el valor sin descuento de intereses
+    var descuentoInput = parseFloat(document.getElementById("descuentoInput2").value);
+    var valorsindescuentocapital = capital - (capital * descuentoInput);
+
+     // Mostrar el resultado en el campo de "VALOR SIN DSTO INTERESES"
+     document.getElementById("valorSinDescuentoCapital").innerText = valorsindescuentocapital.toFixed(2);
+
+
+    // VALOR DE DESCUENTO CAPITAL
+     var valordescuentocapital = capital - valorsindescuentocapital ;
+     document.getElementById("descuentocapital").innerText = valordescuentocapital.toFixed(2);
+
+
+     // VALOR DE CAPITAL CON DSTO
+     var capitalcondescuento = capital - valordescuentocapital ;
+
+     document.getElementById("capitalcondescuento").innerText = capitalcondescuento.toFixed(2);
+
+
+     //VALOR INTERES CON SIN DESCUENTO 
+    // document.getElementById("interesconsindescuento").innerText = capitalcondescuento.toFixed(2);
+
+
+}
