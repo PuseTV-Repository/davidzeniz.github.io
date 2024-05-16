@@ -27,4 +27,28 @@ function calculateInterest() {
 
     // Mostrar el resultado en el campo de "VALOR SIN DSTO INTERESES"
     document.getElementById("valorSinDescuentoInteres").innerText = valorsindescuentointeres.toFixed(2);
+
+    // Calcular el descuento de intereses
+    var descuentoIntereses = income - valorsindescuentointeres;
+
+    // Mostrar el resultado en el campo de "DESCUENTO INTERESES"
+    document.getElementById("descuentoIntereses").innerText = descuentoIntereses.toFixed(2);
+
+    // Mostrar el valor del capital en el campo "CAPITAL"
+    document.getElementById("capitalInicial").innerText = capital.toFixed(2);
+
+
+     // Calcular el interés con descuento
+     var interesConDescuento = income - descuentoIntereses;
+
+     // Mostrar el resultado en el campo de "INTERES CON DSTO"
+     document.getElementById("interesConDescuento").innerText = interesConDescuento.toFixed(2);
+
+     // Calcular la DEUDA TOTAL 2 como la suma de "capital" e "interes con descuento"
+    var nuevaDeudaTotal2 = capital + interesConDescuento;
+
+    // Mostrar el resultado en el campo de "DEUDA TOTAL 2"
+    document.getElementById("deudaTotal2").innerText = nuevaDeudaTotal2.toFixed(2);
+
+
 }
