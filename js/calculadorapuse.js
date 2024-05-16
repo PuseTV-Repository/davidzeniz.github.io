@@ -65,22 +65,27 @@ function calculateInterest() {
     // Asignar el valor al input del segundo card
     document.getElementById('income2').value = valor;
 
-
     //DEUDA TOTAL
     document.getElementById("resultadoDeudaTotal2").innerText = totalDebt.toFixed(2); 
 
+    // PARA EL INTERES CON SIN DSTO
+    // PARA EL INTERES CON SIN DSTO
+    var interescondscto = document.getElementById('interesConDescuento').innerText;
+    document.getElementById('interesconsindescuento').value = interescondscto;
+
+
+
+    
 }
 
 
 function calculateInterest2() {
    
     var capitalInput = document.getElementById("capitalInput").value.trim();
-    var incomeInput = document.getElementById("incomeInput").value.trim();
 
      // Convertir los valores a números flotantes
      var capital = parseFloat(capitalInput);
-     var income = parseFloat(incomeInput);
- 
+
 
 
     // Calcular el valor sin descuento de intereses
@@ -102,8 +107,6 @@ function calculateInterest2() {
      document.getElementById("capitalcondescuento").innerText = capitalcondescuento.toFixed(2);
 
 
-     //VALOR INTERES CON SIN DESCUENTO 
-    // document.getElementById("interesconsindescuento").innerText = capitalcondescuento.toFixed(2);
-
+    
 
 }
