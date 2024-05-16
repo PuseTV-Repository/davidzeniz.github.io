@@ -1,166 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<title>Period</title>
+	<title>Inicio</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="stylesheet" href="./css/main.css">
+	<script src="./js/calculadorapuse.js"></script>
 
-	<script src="https://kit.fontawesome.com/3c44aa10f3.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="public/css/style-icon-github.css">
-	<style>
-		.form-container {
-			display: flex;
-			justify-content: space-between;
-		}
-	
-		.form {
-			flex: 1;
-			padding: 20px;
-		}
-	
-		.tab {
-			flex: 1;
-			padding: 20px;
-			border: 2px solid #333;
-			border-radius: 10px;
-		}
-	
-		.form h1 {
-			text-align: center;
-			font-size: 24px;
-			margin-bottom: 20px;
-		}
-	
-		.form label {
-			display: block;
-			margin-bottom: 10px;
-		}
-	
-		.form label input {
-			width: 100%;
-			padding: 10px;
-			border: 1px solid #333;
-			border-radius: 5px;
-		}
-	
-		.form button {
-			display: block;
-			margin-top: 20px;
-			background-color: #007bff;
-			color: #fff;
-			padding: 10px 20px;
-			border: none;
-			border-radius: 5px;
-			cursor: pointer;
-		}
-	
-		.tab table {
-			width: 100%;
-			border-collapse: collapse;
-		}
-	
-		.tab th, .tab td {
-			padding: 10px;
-			border: 1px solid #333;
-		}
-	
-		.tab thead {
-			background-color: #333;
-			color: #fff;
-		}
-	
-		.tab td {
-			text-align: center;
-		}
-	
-		.tab .ft {
-			font-weight: bold;
-		}
-	
-		.tab tfoot {
-			background-color: #333;
-			color: #fff;
-		}
-		
-		.input-radio-container {
-			display: flex;
-			align-items: center;
-			margin-top: 10px;
-		}
-
-		.input-radio-container input[type="text"] {
-			flex: 1;
-			padding: 10px;
-			border: 1px solid #333;
-			border-radius: 5px;
-			margin-right: 10px; /* Ajusta el margen derecho para separar los radio buttons horizontalmente */
-
-		}
-
-		.radio-buttons {
-			display: flex;
-			align-items: center;
-
-		}
-
-		.radio-buttons input[type="radio"] {
-			vertical-align: middle; /* Alinea verticalmente los radio buttons con el texto */
-			margin-right: 10px; /* Ajusta el margen derecho para separar los radio buttons horizontalmente */
-		}
-		.radio-buttons label {
-			margin-right: 15px;
-		}
-
-
-	</style>
-	<style>
-		/* Estilos para dispositivos más grandes (escritorio) */
-		@media (min-width: 768px) {
-			.form-container {
-				display: flex;
-				justify-content: space-between;
-			}
-	
-			.form {
-				flex: 1;
-				padding: 20px;
-			}
-	
-			.tab {
-				flex: 1;
-				padding: 20px;
-			}
-		}
-	
-		/* Estilos para dispositivos más pequeños (móvil) */
-		@media (max-width: 767px) {
-			.form-container {
-				flex-direction: column;
-			}
-	
-			.form {
-				padding: 20px;
-			}
-	
-			.tab {
-				padding: 20px;
-			}
-		}
-	
-		/* Agrega más estilos para hacer que los elementos sean más receptivos según tus necesidades */
-	</style>
-	
-	<style>
-		.tab-container {
-			max-width: 100%;
-			overflow-x: auto;
-		}
-		table.tab {
-			width: 100%;
-		}
-	</style>
-	
 </head>
 <body>
 	<!-- SideBar -->
@@ -169,13 +15,14 @@
 		<div class="full-box dashboard-sideBar-ct">
 			<!--SideBar Title -->
 			<div class="full-box text-uppercase text-center text-titles dashboard-sideBar-title">
-				AUDACES <i class="zmdi zmdi-close btn-menu-dashboard visible-xs"></i>
+				PUSE <i class="zmdi zmdi-close btn-menu-dashboard visible-xs"></i>
 			</div>
 			<!-- SideBar User info -->
 			<div class="full-box dashboard-sideBar-UserInfo">
 				<figure class="full-box">
-					<img src="./assets/img/team.jpg" alt="UserIcon">
-					<figcaption class="text-center text-titles">Grupo Audaces</figcaption>
+					<img src="./assets/img/logopuse.jpg" alt="UserIcon">
+					<br>
+					<figcaption class="text-center text-titles">Marketing & Servicios</figcaption>
 				</figure>
 				<ul class="full-box list-unstyled text-center">
 					
@@ -183,24 +30,26 @@
 						<a href="#!" class="btn-exit-system">
 							<i class="zmdi zmdi-power"></i>
 						</a>
-						<p>Cerrar Sesion</p>
+						<p>
+							Cerrar Sesion
+						</p>
 					</li>
 				</ul>
 			</div>
 			<!-- SideBar Menu -->
 			<ul class="list-unstyled full-box dashboard-sideBar-Menu">
-				<li>
+				<!-- <li>
 					<a href="home.html">
-						<i class="zmdi zmdi-view-dashboard zmdi-hc-fw"></i> Integrantes
+						<i class="zmdi zmdi-view-dashboard zmdi-hc-fw"></i> INICIO
 					</a>
-				</li>
+				</li> -->
 				<li>
 					<a href="#!" class="btn-sideBar-SubMenu">
 						<i class="zmdi zmdi-case zmdi-hc-fw"></i> Simulacion <i class="zmdi zmdi-caret-down pull-right"></i>
 					</a>
 					<ul class="list-unstyled full-box">
 						<li>
-							<a href="period.html"><i class="zmdi zmdi-timer zmdi-hc-fw"></i> Cronograma Pagos</a>
+							<a href="period.html"><i class="zmdi zmdi-calculator zmdi-hc-fw"></i>Calculadora</a>
 						</li>
 						<!-- <li>
 							<a href="subject.html"><i class="zmdi zmdi-book zmdi-hc-fw"></i> Subject</a>
@@ -213,7 +62,7 @@
 						</li> -->
 					</ul>
 				</li>
-				<li>
+				<!-- <li>
 					<a href="#!" class="btn-sideBar-SubMenu">
 						<i class="zmdi zmdi-account-add zmdi-hc-fw"></i> UNIDAD I <i class="zmdi zmdi-caret-down pull-right"></i>
 					</a>
@@ -275,10 +124,10 @@
 							</a>						
 						</li>
 					</ul>
-				</li>
+				</li> -->
 				<li>
 					<a href="#!" class="btn-sideBar-SubMenu">
-						<i class="zmdi zmdi-card zmdi-hc-fw"></i> MI CALCULADORA VIRTUAL <i class="zmdi zmdi-caret-down pull-right"></i>
+						<i class="zmdi zmdi-card zmdi-hc-fw"></i> Calculadora Online <i class="zmdi zmdi-caret-down pull-right"></i>
 					</a>
 					<ul class="list-unstyled full-box">
 						<li>
@@ -287,7 +136,7 @@
 						
 					</ul>
 				</li>
-				<li>
+				<!-- <li>
 					<a href="#!" class="btn-sideBar-SubMenu">
 						<i class="zmdi zmdi-card zmdi-hc-fw"></i> VAN Y TIR <i class="zmdi zmdi-caret-down pull-right"></i>
 					</a>
@@ -297,7 +146,7 @@
 						</li>
 						
 					</ul>
-				</li>
+				</li> -->
 				<!-- <li>
 					<a href="#!" class="btn-sideBar-SubMenu">
 						<i class="zmdi zmdi-shield-security zmdi-hc-fw"></i> Settings School <i class="zmdi zmdi-caret-down pull-right"></i>
@@ -323,12 +172,7 @@
 				<li>
 					<a href="#!" class="btn-Notifications-area">
 						<i class="zmdi zmdi-notifications-none"></i>
-						<span class="badge">7</span>
-					</a>
-				</li>
-				<li>
-					<a href="#!" class="btn-search">
-						<i class="zmdi zmdi-search"></i>
+						<span class="badge">Nuestro Equipo</span>
 					</a>
 				</li>
 				<li>
@@ -341,125 +185,149 @@
 		<!-- Content page -->
 		<div class="container-fluid">
 			<div class="page-header">
-			  <h1 class="text-titles"><i class="zmdi zmdi-timer zmdi-hc-fw"></i> Cronograma <small>de Pagos Cuota Fija</small></h1>
+				<h1 class="text-titles">Simulador <small>Campo</small></h1>
 			</div>
-			<p class="lead"> Realizacion de Simulacion de Cronograma de pagos segun requerimientos del Cliente </p>
 		</div>
-		<div class="container-fluid">
-			<div class="row ">
-				<div class="col-xs-12">
-					
-					<div class="form-container">
-						<div class="form">
-							<fieldset>
-								<h1>CRONOGRAMA CUOTA FIJA</h1>
-							
-									<div>
-										<label for="capital">CAPITAL/DEUDA
-											<input type="text" autofocus  placeholder="Ingrese el capital/Deuda" id="capital">
-											<i class="fas fa-coins"></i>
-										</label>
-									</div>
-
-									<div>
-										<label for="couta">N° CUOTAS - Meses
-											<input type="text" placeholder="Ingrese las cuotas del préstamo" id="couta">
-											<i class="far fa-calendar-alt"></i>
-										</label>
-									</div>
-
-									<!-- <div>
-										<label for="interes">TASA DE INTERÉS
-											<input type="text" placeholder="Ingrese la tasa de interés" id="interes">
-											<i class="fas fa-hand-holding-usd"></i>
-										</label>
-										<div>
-											<input type="radio" name="tasatipo" value="anual" id="anual" checked> 
-											<label for="anual">Anual</label>
-										</div>
-										<div>
-											<input type="radio" name="tasatipo" value="mensual" id="mensual"> 
-											<label for="mensual">Mensual</label>
-										</div>
-									</div> -->
-									
-									<div>
-										<label for="interes">TASA DE INTERÉS %</label>
-										<div class="input-radio-container">
-											<input type="text" placeholder="Ingrese la tasa de interés" id="interes">
-											<div class="radio-buttons">
-												<!-- <input type="radio" name="tasatipo" value="anual" id="anual" checked> -->
-												<!-- <label for="anual">Anual</label> -->
-												<input type="radio" name="tasatipo" value="mensual" id="mensual">
-												<label for="mensual">Mensual</label>
-											</div>
-										</div>
-										<i class="fas fa-hand-holding-usd"></i>
-									</div>
-									
-									<div style="text-align: center;">
-										<button onclick="calcularCuota()">Calcular Cuota Fija</button>
-									  </div>
-									  
-									  
-									<br>
-									<div>
-										<label for="montocuota">MONTO CUOTA
-											<input type="text" placeholder="Ingrese el Monto Cuota" id="montocuota">
-											<i class="fas fa-coins"></i>
-										</label>
-									</div>
-
-								<button onclick="gen_table();">CALCULAR</button>
-							</fieldset>
+	
+		<div class="container mt-5">
+			<div class="row justify-content-center">
+				
+				<div class="col-md-6">
+					<div class="card">
+						<div class="card-header text-center">
+							<h3 class="card-title">Interés</h3>
 						</div>
-						<div class="tab-container">
-							<table class="tab">
-								<thead>
-									<tr>
-										<td>NRO</td>
-										<td>CAPITAL/DEUDA</td>
-										<td>AMORTIZACION</td>
-										<td>INTERÉS</td>
-										<td>CUOTA</td>
-									</tr>
-								</thead>
-								<tbody id="tab"></tbody>
-								<tfoot>
-									<tr>
-										<td class="ft">TOTAL</td>
-										<td id="t1"></td>
-										<td id="t4"></td>
-										<td id="t2"></td>
-										<td id="t3"></td>
-									</tr>
-								</tfoot>
-							</table>
+						<div class="card-body">
+							<form id="simulatorForm">
+								<div class="row">
+									<div class="col-md-6">
+										<div class="form-group">
+											<label for="capitalInput" style="color: black;">Capital:</label>
+											<input type="number" class="form-control" id="capitalInput" placeholder="Ingrese el capital">
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form-group">
+											<label for="incomeInput" style="color: black;">Ingreso:</label>
+											<input type="number" class="form-control" id="incomeInput" placeholder="Ingrese el ingreso">
+										</div>
+									</div>
+								</div>
+								<div>
+									<button type="button" class="btn btn-primary" onclick="calculateInterest()" style="background-color:#EA5B0C; color: white;">Calcular</button>
+								</div>
+								<div class="mt-3">
+									<label style="color: black;">Deuda Total:</label>
+									<div id="resultadoDeudaTotal"></div>
+								</div>
+								<div class="form-group mt-3">
+									<label for="descuentoInput" style="color: black;">DSTO INTERESES (%):</label>
+									<select class="form-control" id="descuentoInput" onchange="aplicarDescuento()">
+										<option value="0.00">5%</option>
+										<option value="0.05">5%</option>
+										<option value="0.1">10%</option>
+										<option value="0.15">15%</option>
+										<option value="0.20">20%</option>
+										<option value="0.25">25%</option>
+										<option value="0.30">30%</option>
+										<option value="0.35">35%</option>
+										<option value="0.40">40%</option>
+										<option value="0.45">45%</option>
+										<option value="0.50">50%</option>
+										<option value="0.55">55%</option>
+										<option value="0.60">60%</option>
+										<option value="0.65">65%</option>
+										<option value="0.70">70%</option>
+										<option value="0.75">75%</option>
+										<option value="0.80">80%</option>
+										<option value="0.85">85%</option>
+										<option value="0.90">90%</option>
+										<option value="0.95">95%</option>
+										<option value="1">100%</option>
+										<!-- Otras opciones de descuento -->
+									</select>
+								</div>
+								<div class="mt-3">
+									<label style="color: black;">VALOR SIN DSTO INTERESES: </label>
+									<div id="valorSinDescuentoInteres"></div>
+								</div>
+								<div class="mt-3">
+									<label style="color: black;">DESCUENTO INTERESES: </label>
+									<div id="descuentoIntereses"></div>
+								</div>
+								<div class="mt-3">
+									<label style="color: black;">CAPITAL: </label>
+									<div id="capitalInicial"></div>
+								</div>
+								<div class="mt-3">
+									<label style="color: black;">INTERES CON DSTO: </label>
+									<div id="interesConDescuento"></div>
+								</div>
+								<div class="mt-3">
+									<label style="color: black;">DEUDA TOTAL 2: </label>
+									<div id="deudaTotal2"></div>
+								</div>
+							</form>
 						</div>
 					</div>
-					
+				</div>
+				
+
+
+
+
+
+
+
+
+
+				
+				<div class="col-md-6">
+					<div class="card">
+						<div class="card-header text-center"> <!-- Añadido 'text-center' para centrar el título -->
+							<h3 class="card-title">Capital</h3>
+						</div>
+						<div class="card-body">
+							<form id="simulatorForm2">
+								<div class="form-group">
+									<label for="capital2">Capital:</label>
+									<input type="number" class="form-control" id="capital2" placeholder="Ingrese el capital">
+								</div>
+								<div class="form-group">
+									<label for="income2">Ingreso:</label>
+									<input type="number" class="form-control" id="income2" placeholder="Ingrese el ingreso">
+								</div>
+								<button type="button" class="btn btn-primary" onclick="calculateCapital()" style="background-color:#EA5B0C; color: white;">Calcular</button>
+
+							</form>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
+
+
+
 	</section>
+	
 
 	<!-- Notifications area -->
 	<section class="full-box Notifications-area">
 		<div class="full-box Notifications-bg btn-Notifications-area"></div>
 		<div class="full-box Notifications-body">
 			<div class="Notifications-body-title text-titles text-center">
-				Matematica para Negocios <i class="zmdi zmdi-close btn-Notifications-area"></i>
+				EQUIPO PUSE <i class="zmdi zmdi-close btn-Notifications-area"></i>
 			</div>
 			<br>
 			<div class="list-group">
 				<div class="list-group-item">
 					<div class="row-action-primary text-center">
-						<img src="./assets/img/profecosme.jpg" alt="UserIcon" style="width: 80%; height: 100%;" class="rounded-circle">
+						<img src="https://bucket-puse.s3.amazonaws.com/puseweb/WhatsApp+Image+2024-05-16+at+11.22.07+AM.jpeg" alt="UserIcon" style="width: 80%; height: 100%;" class="rounded-circle">
 					</div>
 					<div class="row-content">
 						<div class="least-content">...</div>
-						<h4 class="list-group-item-heading">DOCENTE</h4>
-						<p class="list-group-item-text">Ms. Manuel Edward Cosme Urbina</p>
+						<h4 class="list-group-item-heading">En PUSE</h4>
+						<p class="list-group-item-text">Estamos comprometidos con ser una fuerza dedicada a la excelencia, con más de 6 años de experiencia en el mercado. Nos comprometemos a optimizar las operaciones de tercerización de personal para una variedad de servicios, guiados siempre por valores fundamentales como la integridad, la empatía y el compromiso.</p>
 					</div>
 				</div>
 			</div>
@@ -496,6 +364,5 @@
 	<script>
 		$.material.init();
 	</script>
-	<script src="js/prestamo.js"></script>
 </body>
 </html>
