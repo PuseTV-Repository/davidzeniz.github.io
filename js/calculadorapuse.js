@@ -52,7 +52,7 @@ function calculateInterest() {
 
     
 
-    ////SEGUNDO CARD VALORES
+    ////SEGUNDO CARD VALORES -------
 
     // PARA EL CAPITAL
     var valor = document.getElementById('capitalInput').value;   
@@ -72,6 +72,7 @@ function calculateInterest() {
     document.getElementById('interesconsindescuento').innerText = interesConDescuento.toFixed(2);
 
 
+   
 }
 
 
@@ -81,8 +82,6 @@ function calculateInterest2() {
 
      // Convertir los valores a números flotantes
      var capital = parseFloat(capitalInput);
-
-
 
     // Calcular el valor sin descuento de intereses
     var descuentoInput = parseFloat(document.getElementById("descuentoInput2").value);
@@ -104,13 +103,12 @@ function calculateInterest2() {
 
 
 
-    //VALOR DEUDA TOTAL 02
-    var interesconsindescuentoInput = document.getElementById("interesconsindescuento").value.trim();
+    //VALOR DEUDA TOTAL 02 SEGUNDO CARD
+    var interesconsindescuentoInput = document.getElementById("interesconsindescuento").innerText.trim();
     var deudaTotal = parseFloat(interesconsindescuentoInput);
 
     var deudaTotalCapital2 = capitalcondescuento +  deudaTotal ; 
     document.getElementById("deudaTotalCapital2").innerText = deudaTotalCapital2.toFixed(2);
-
 
 
 }
