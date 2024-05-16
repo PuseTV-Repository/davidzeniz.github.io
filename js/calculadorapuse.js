@@ -48,7 +48,7 @@ function calculateInterest() {
     var nuevaDeudaTotal2 = capital + interesConDescuento;
 
     // Mostrar el resultado en el campo de "DEUDA TOTAL 2"
-    document.getElementById("deudaTotal2").innerText = nuevaDeudaTotal2.toFixed(2);
+    document.getElementById("deudaTotal2").innerText = nuevaDeudaTotal2.toFixed(0);
 
 
 }
