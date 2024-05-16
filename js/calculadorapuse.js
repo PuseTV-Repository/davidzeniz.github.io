@@ -52,8 +52,18 @@ function calculateInterest() {
 
     
 
+    ////SEGUNDO CARD VALORES
+
+    // PARA EL CAPITAL
+    var valor = document.getElementById('capitalInput').value;   
+    // Asignar el valor al input del segundo card
+    document.getElementById('capital2card').value = valor;
 
 
+    // PARA EL INTERES
+    var valor = document.getElementById('incomeInput').value;
+    // Asignar el valor al input del segundo card
+    document.getElementById('income2').value = valor;
 
 
 
