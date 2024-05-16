@@ -66,5 +66,7 @@ function calculateInterest() {
     document.getElementById('income2').value = valor;
 
 
+    //DEUDA TOTAL
+    document.getElementById("resultadoDeudaTotal2").innerText = totalDebt.toFixed(2); 
 
 }
