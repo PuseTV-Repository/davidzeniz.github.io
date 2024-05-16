@@ -202,13 +202,13 @@
 								<div class="row">
 									<div class="col-md-6">
 										<div class="form-group">
-											<label for="capitalInput" style="color: black;">Capital:</label>
+											<label for="capitalInput" style="color: black;">Capital: S/</label>
 											<input type="number" class="form-control" id="capitalInput"  placeholder="Ingrese el capital">
 										</div>
 									</div>
 									<div class="col-md-6">
 										<div class="form-group">
-											<label for="incomeInput" style="color: black;">Ingreso:</label>
+											<label for="incomeInput" style="color: black;">Ingreso: S/</label>
 											<input type="number" class="form-control" id="incomeInput" placeholder="Ingrese el ingreso">
 										</div>
 									</div>
@@ -225,7 +225,7 @@
 	
 								<div class="form-group mt-3">
 									<label for="descuentoInput" style="color: black;">DSTO INTERESES (%):</label>
-									<select class="form-control" id="descuentoInput" onchange="aplicarDescuento()">
+									<select class="form-control" id="descuentoInput" onchange="calculateInterest()">
 										<option value="0.00">0%</option>
 										<option value="0.05">5%</option>
 										<option value="0.1">10%</option>
@@ -252,7 +252,7 @@
 	
 								<div class="mt-3">
 									<div style="display: flex; align-items: center;">
-										<label style="color: black; margin-right: 10px; margin-bottom: 0;">VALOR SIN DSTO INTERESES:</label>
+										<label style="color: black; margin-right: 10px; margin-bottom: 0;">VALOR SIN DSTO INTERESES: S/</label>
 										<div id="valorSinDescuentoInteres"></div>
 									</div>
 								</div>
@@ -260,14 +260,14 @@
 
 								<div class="mt-3">
 									<div style="display: flex; align-items: center;">
-										<label style="color: black; margin-right: 10px; margin-bottom: 0;">DESCUENTO INTERESES:</label>
+										<label style="color: black; margin-right: 10px; margin-bottom: 0;">DESCUENTO INTERESES: S/</label>
 										<div id="descuentoIntereses"></div>
 									</div>
 								</div>
 
 								<div class="mt-3">
 									<div style="display: flex; align-items: center;">
-										<label style="color: black; margin-right: 10px; margin-bottom: 0;">CAPITAL</label>
+										<label style="color: black; margin-right: 10px; margin-bottom: 0;">CAPITAL: S/</label>
 										<div id="capitalInicial"></div>
 									</div>
 								</div>
@@ -275,7 +275,7 @@
 
 								<div class="mt-3">
 									<div style="display: flex; align-items: center;">
-										<label style="color: black; margin-right: 10px; margin-bottom: 0;">INTERES CON DSTO:</label>
+										<label style="color: black; margin-right: 10px; margin-bottom: 0;">INTERES CON DSTO: S/</label>
 										<div id="interesConDescuento"></div>
 									</div>
 								</div>
@@ -283,7 +283,7 @@
 
 								<div class="mt-3">
 									<div style="display: flex; align-items: center;">
-										<label style="color: black; margin-right: 10px; margin-bottom: 0;">DEUDA TOTAL 2 :</label>
+										<label style="color: black; margin-right: 10px; margin-bottom: 0;">DEUDA TOTAL 2 : S/</label>
 										<div id="deudaTotal2"></div>
 									</div>
 								</div>
@@ -296,6 +296,8 @@
 				
 
 				<br>
+
+
 				<div class="col-md-6">
 					<div class="card">
 						<div class="card-header text-center"> <!-- Añadido 'text-center' para centrar el título -->
@@ -304,14 +306,13 @@
 						<div class="card-body">
 							<form id="simulatorForm2">
 								<div class="form-group">
-									<label for="capital2">Capital:</label>
+									<label for="capital2"style="color: black;">Capital: S/</label>
 									<input type="number" class="form-control" id="capital2" placeholder="Ingrese el capital">
 								</div>
 								<div class="form-group">
-									<label for="income2">Ingreso:</label>
+									<label for="income2">Ingreso: S/</label>
 									<input type="number" class="form-control" id="income2" placeholder="Ingrese el ingreso">
 								</div>
-								<button type="button" class="btn btn-primary" onclick="calculateCapital()" style="background-color:#EA5B0C; color: white;">Calcular</button>
 
 							</form>
 						</div>
