@@ -111,5 +111,24 @@ function calculateInterest2() {
     document.getElementById("deudaTotalCapital2").innerText = deudaTotalCapital2.toFixed(2);
 
 
+    //CALCULANDO RESUMEN 
+    //total descuento
+    var total = parseFloat(document.getElementById("descuentoIntereses").innerText);
+    var descuentocapit = parseFloat(document.getElementById("descuentocapital").innerText);
+    
+
+
+    var resul = total + descuentocapit;
+    document.getElementById("totaldescuento").innerText = resul.toFixed(2); // toFixed(2) para redondear a 2 decimales
+
+    //total porcentaje descuento
+    var divisor = parseFloat(document.getElementById("totaldescuento").innerText);
+    var dividendo = parseFloat(document.getElementById("resultadoDeudaTotal").innerText);
+
+    var factor = (divisor / dividendo) * 100 ;  
+    document.getElementById("porcentajedescuento").innerText = factor.toFixed(0); // toFixed(2) para redondear a 2 decimales
+
+
+
 }
 
