@@ -69,13 +69,9 @@ function calculateInterest() {
     document.getElementById("resultadoDeudaTotal2").innerText = totalDebt.toFixed(2); 
 
     // PARA EL INTERES CON SIN DSTO
-    // PARA EL INTERES CON SIN DSTO
-    var interescondscto = document.getElementById('interesConDescuento').innerText;
-    document.getElementById('interesconsindescuento').value = interescondscto;
+    document.getElementById('interesconsindescuento').innerText = interesConDescuento.toFixed(2);
 
 
-
-    
 }
 
 
@@ -107,6 +103,14 @@ function calculateInterest2() {
      document.getElementById("capitalcondescuento").innerText = capitalcondescuento.toFixed(2);
 
 
-    
+
+    //VALOR DEUDA TOTAL 02
+    var interesconsindescuentoInput = document.getElementById("interesconsindescuento").value.trim();
+    var deudaTotal = parseFloat(interesconsindescuentoInput);
+
+    var deudaTotalCapital2 = capitalcondescuento +  deudaTotal ; 
+    document.getElementById("deudaTotalCapital2").innerText = deudaTotalCapital2.toFixed(2);
+
+
 
 }
